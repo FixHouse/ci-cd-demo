@@ -10,7 +10,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Run simple Bash command
+    - name: Run hello.sh script
       run: |
-        echo "Привіт від GitHub Actions 👋"
-        echo "Запускаю CI/CD вперше!"
+        chmod +x hello.sh
+        ./hello.sh
